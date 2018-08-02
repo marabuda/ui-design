@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+			font-family: Microsoft JhengHei;
+			background-image: url('web2_bk.jpg');
+		}
+		a{
+			text-decoration: none;
+			color: #06612B;
+			font-size: 36pt;
+			font-family: Lucida Sans;
+
+		}
+		#now{
+			color: #2ACD6B;
+		}
+		header{
+			text-align: center;
+			background-color: black;
+			height: 85px;
+			padding-top: 24px;
+		}
+	#charge,#card,#chheck{
+		border-radius: 10px;
+		border: 3px;
+		margin: 25px 30%;
+		height: 55px;
+		width: 40%;
+		background-color: orange;
+		box-shadow:5px 5px 10px 1px gray ;
+		transform: translate(0,10px)
+	}
+	#card{
+		height: 310px !important;
+	}
+	#chheck{
+		background-color:#FFAC4D !important;
+	}
+	span{
+		color: red;
+	}
+	#text{
+		float: right;
+		width: 80%;
+		background-color: white;
+		height: 100%;
+		border-radius:0 10px 10px 0;
+	}
+	h1{
+		font-size: 16pt;
+		transform: translate(15px, -15%);
+		display: inline-block;
+	}
+	h5{
+		font-size: 16pt;
+		transform: translate(10px, -85%);	
+	}
+	.pretty-select {
+  	/*移除箭頭樣式*/
+  	appearance:none;
+  	-moz-appearance:none;
+  	-webkit-appearance:none;
+
+  	background: url("1502789549_90663.png") no-repeat right center transparent;
+  	background-color:#F6F7F7;
+  	height: 30px;
+	}
+	table{
+		transform: translate(5px,0px)
+	}
+	tr{
+		height: 56px;
+	}
+	</style>
+	
+
+</head>
+<body>
+	<header>
+		<a href="#">step1></a>
+		<a id="now" href="#">step2></a>
+		<a href="#">step3></a>
+	</header>
+	<section id="charge"><h1>結帳金額:</h1>
+		<div id="text">
+					<h5><span>995</span>元</h5>
+			</table>
+			</div>
+	</section>
+	<section id="card"><h1>結帳方式:</h1>
+		<div id="text">
+			<table border="0">
+  <tr>
+    <td>選擇方式</td>
+    <td>
+    	<div class="a">
+    	<select class="pretty-select" style="width:200px;">
+    	<option value="1">信用卡付款</option>
+    	<option value="2">超商取貨付款</option>
+    	<option value="3">ATM轉帳</option>
+    	</div>
+    </select>
+	</td>
+  </tr>
+  <tr>
+    <td>信用卡卡別</td>
+    <td>
+    	<input type="radio" name="type" value="VISA" checked="true">VISA/MASTER/JCB<br>
+		<input type="radio" name="type" value="American">美國運通卡American Ecpress<br>
+	</td>
+  </tr>
+  <tr>
+    <td>信用卡卡號</td>
+    <td><input type="number" name="number" style="width: 50px">-<input type="number" name="number"style="width: 50px">-<input type="number" name="number"style="width: 50px">-<input type="number" name="number" style="width: 50px"></td>
+  </tr>
+   <tr>
+    <td>有效期限</td>
+    <td><input type="number" name="number" style="width: 110px" placeholder="mm/yy"></td>
+  </tr>
+   <tr>
+    <td>檢核碼</td>
+    <td><input type="number" name="number" style="width: 110px"><a href="#" style="font-size: 12pt;margin-left: 10px;font-family: Microsoft JhengHei;">這是什麼?</a></td>
+  </tr>
+</table>
+	</section>
+	<section id="chheck"><h1>資料確認:</h1>
+		<div id="text">
+					<h5><span>未完成</span></h5>
+			</table>
+			</div>
+	</section>
+</body>
+</html>
