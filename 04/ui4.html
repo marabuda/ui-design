@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link href="/ui4.css" rel="stylesheet" media="all">
+	 <script src="/ui4.js"></script>
+
+</head>
+<body>
+	<section>
+	<header>鬧鐘設定</header>
+	<input id="name" type="text" name="name" placeholder="鬧鐘命名">	
+	<!-- 左邊 -->
+	<div class="part">
+		<select id="hour"></select>
+	<div id="switches">
+		<div id="icon">
+			<img src="mu.png" height="28px" >
+		</div>
+		
+		<div id="switch">
+			<div class="model-1">
+  			<div class="checkbox">
+    		<input id="mu" type="checkbox">
+    		<label></label>
+  			</div>
+  			</div>
+  		</div>
+	</div>
+	</div>
+	
+
+	<!-- 右邊 -->
+	<div class="part">
+	<select id="minute"></select>
+	<div id="switches">
+		<div id="icon">
+			<img src="vi.png" height="28px">
+		</div>
+		
+
+		<div id="switch">
+			<div class="model-1">
+  			<div class="checkbox">
+    		<input type="checkbox">
+    		<label></label>
+  			</div>
+  			</div>
+  		</div>
+	</div>
+	</div>
+	
+	<input id="ring" type="text" name="name" placeholder="請開啟鈴聲設定" disabled="true">
+	<div class="day">	
+
+	<div class="but"><input type="checkbox"><label>一</label></div>
+	<div class="but"><input type="checkbox"><label>二</label></div>
+	<div class="but"><input type="checkbox"><label>三</label></div>
+	<div class="but"><input type="checkbox"><label>四</label></div>
+	<div class="but"><input type="checkbox"><label>五</label></div>
+	<div class="but"><input type="checkbox"><label>六</label></div>
+	<div class="but"><input type="checkbox"><label>日</label></div>
+	</div>
+
+	<div id="foot">
+	<div id="bot1">
+		<button id="cancel">取消</button>
+		</div>
+		<div id="bot2">	
+		<button id="confirm">確認</button>
+		</div>
+
+	</div>
+	</section>
+	
+	
+	
+
+
+	
+    
+</body>
+</html>

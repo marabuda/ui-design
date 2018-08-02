@@ -1,0 +1,244 @@
+@charset "UTF-8";
+	.checkbox {
+	  	position: relative;
+	  	display: inline-block;
+	}
+	.checkbox label {
+	  	width: 65px;
+	  	height: 30px;
+	  	background: #ccc;
+	  	position: relative;
+	  	display: inline-block;
+	  	border-radius: 46px;
+	}
+	.checkbox label:after {
+	  	content: '';
+	  	position: absolute;
+	  	width: 35px;
+	  	height: 35px;
+	  	border-radius: 100%;
+	  	left: -5px;
+	  	top: -2px;
+	  	z-index: 2;
+	  	background: #fff;
+	  	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	  	-webkit-transition: 0.4s;
+	  	transition: 0.4s;
+	}
+	.checkbox input {
+	  	position: absolute;
+	  	left: 0;
+	  	top: 0;
+	  	width: 100%;
+	  	height: 100%;
+	  	z-index: 5;
+	  	opacity: 0;
+	  	cursor: pointer;
+	}                
+	.checkbox input:hover + label:after {
+	  	box-shadow: 0 2px 15px 0 rgba(55, 0, 50, 0.2),
+	  	0 5px 50px 0 rgba(0, 0, 50, 0.7);
+	}
+	.checkbox input:checked + label:after {
+  		left: 40px;
+	}
+ 
+	.model-1 .checkbox input:checked + label {
+  		background: #376ecb;
+	}
+	.model-1 .checkbox input:checked + label:after {
+  		background: #4285F4;
+	}  
+	body{
+		font-family: Microsoft JhengHei;
+		background-image: url('bk2.jpg');
+		background-size:cover;
+		
+	}
+	header{
+		text-align: center;
+		color: white;
+		font-size: 35px;
+	}
+ 	#name,#ring{
+ 		background-color: rgba(223, 223, 223, 0.7);
+ 		border: 0;
+ 		height: 35px;
+ 		width: 80%;
+ 		margin-left: 10%;
+ 		margin-top: 20px;
+ 		margin-bottom: 20px;
+ 		display: block;
+		font-family: Microsoft JhengHei;
+ 	}
+ 	#ring{
+ 		appearance:none;
+  		-moz-appearance:none;
+  		-webkit-appearance:none;
+  		background: url("dot.jpg") no-repeat right center ;
+  		background-color: rgba(223, 223, 223, 0.2);
+  		
+ 	}
+ 	#ring:hover{
+ 		appearance:none;
+  		-moz-appearance:none;
+  		-webkit-appearance:none;
+  		background: url("dot1.jpg") no-repeat right center ;
+  		background-color: rgba(223, 223, 223, 0.2);
+ 	}
+ 	#ring:active{
+		background: url("dot2.jpg") no-repeat right center transparent;
+		background-color:rgba(223, 223, 223, 0.7);
+	}
+	section{
+		border-style: solid;
+		border-color: rgba(223, 223, 223, 0.3);
+		height: 500px;
+		width: 70%;
+		margin-left: 15%;
+		margin-top: 50px;
+		padding-top: 10px;
+	}
+	select{
+		height: 35px;
+	 	width: 100%;
+	 	border: 0;
+	 	font-family: Copperplate Gothic Light;
+	 	margin-top: 0;
+	 	appearance:none;
+	  	-moz-appearance:none;
+	  	-webkit-appearance:none;
+	  	background: url("arrow1.jpg") no-repeat right center ;
+		background-color:#F6F7F7;
+	}
+	select:hover{
+		background: url("arrow.jpg") no-repeat right center transparent;
+		background-color:#F6F7F7;
+	}
+	select:active{
+		background: url("arrow2.jpg") no-repeat right center transparent;
+		background-color:#F6F7F7;
+	}    
+	#icon{
+		display: inline-block;
+		width: 25px;
+		margin-top: 20px;
+	}
+	#switch{
+		float: right;
+		margin-top: 22px;
+		display: inline-block;
+	}    
+	.part{
+		display: inline-block;
+		width: 34.5%;
+		margin-left: 10%;
+	} 
+	.day{
+		margin-left: 10%;
+		width: 80%;
+		margin-top: 20px;
+	}
+	.but {
+	  	position: relative;
+	  	display: inline-block;
+	}
+	.but label {
+	  	width: 22px;
+	  	height: 22px;
+	  	background: #ccc;
+	  	position: relative;
+	  	display: inline-block;
+	  	margin-right: 8px;
+	  	border-radius: 100%;
+	  	text-align: center;
+	}
+	
+	.but input {
+	  	position: absolute;
+	  	width: 100%;
+	  	height: 100%;
+	  	z-index: 5;
+	  	opacity: 0;
+	  	cursor: pointer;
+	}     
+	.day .but input:checked + label {
+    	background: #376ecb;
+  	}    
+
+  	button{
+  		width: 100%;
+  		height: 35px;
+		display: block;
+		background-color: rgba(223, 223, 223, 0.7);
+  	} 
+  	#bot2{
+  		float: right;
+  	}
+	#foot div{
+		height: 35px;
+		width: 40%;
+		display:inline-block;
+		border-style: none;
+	}
+	#foot{
+		margin-top: 30px;
+		margin-left: 10%;
+		width: 80%;
+		height: 35px;
+	}
+		/*320+*/
+	/* } */
+	@media only screen and (max-width: 600px){
+	body{
+		
+		background-image: url('bg.jpg');
+		background-size:cover;	
+	}
+	#name,#ring{
+ 		height: 35px;
+ 		width: 84%;
+ 		margin-left: 8%;
+ 		margin-top: 20px;
+ 		margin-bottom: 20px;
+ 	}
+ 	.day{
+		margin-top: 10px;
+	}
+	#icon{
+		margin-top: 10px;
+	}
+	#switch{
+		margin-top: 12px;
+	} 
+	 }
+
+	@media only screen and (max-width: 320px) {
+	#icon{
+		height: 20px;
+		width: 20px;	
+	}
+	.checkbox label {
+		width: 50px;
+		height: 25px;
+	}
+	.checkbox label:after{
+		width: 25px;
+	  	height: 25px;
+	  	top: 0px;
+	}
+	.checkbox input:checked + label:after {
+	left: 30px;
+	}
+	.but label {
+		margin-right: 2px;
+	}
+	button{
+  		width: 80px;
+  	} 
+  	#foot{
+		margin-top: 20px;
+	}
+		/*320-*/
+	}
+	
